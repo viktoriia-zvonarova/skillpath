@@ -19,8 +19,8 @@ The project is not deployed anywhere, so local usage for now only is available.
 
 #### 👨‍💻 For Engineers (Quick Start)
 ```bash
-git clone https://github.com/[username]/engineer-development-map.git
-cd engineer-development-map/development-map-template
+git clone https://github.com/viktoriia-zvonarova/skillpath.git
+cd skillpath
 open index.html  # macOS
 # or simply double-click index.html in file explorer
 ```
@@ -40,7 +40,7 @@ open index.html  # macOS
 
 3. **Open the template**:
    - Open the extracted folder
-   - Find the folder called "development-map-template"
+   - Find the folder called "skillpath
    - Look for a file called "index.html" (it might show as just "index" with a browser icon)
    - Double-click on "index.html" - it will open in your web browser
 
@@ -83,29 +83,7 @@ open index.html  # macOS
 
 ---
 
-## 💡 Best Practices
-
-### 📅 Timeline Planning
-- **Realistic Phases**: Start with 3 phases (Foundation → Specialization → Implementation)
-- **Sustainable Commitment**: 6-8 hours/week is maintainable for most people
-- **Specific Activities**: Include measurable, actionable items in phase descriptions
-- **Buffer Time**: Add 20% extra time for unexpected challenges
-
-### 🎯 Skill Selection
-- **Focus Over Breadth**: 2-3 core technologies for depth rather than many surface-level
-- **Complementary Skills**: Choose technologies that work well together
-- **Market Relevance**: Research current industry demands and trends
-- **Clear Descriptions**: Write concise, specific descriptions of what you'll learn
-
-### 📊 Professional Presentation
-- **Consistent Terminology**: Use the same terms and abbreviations throughout
-- **Action-Oriented Language**: Start bullet points with verbs (Complete, Master, Deploy)
-- **Quantifiable Goals**: Include specific numbers, percentages, or deliverables where possible
-
-
----
-
-### 📁 Project Structure & Local Setup
+### 📁 Project Structure 
 
 ```
 skillpath/
@@ -122,14 +100,6 @@ skillpath/
 └── README.md                  # 📖 This documentation
 ```
 
-#### 🔧 Local Development Setup
-```bash
-# No build process required! Just:
-1. Ensure all files maintain their relative paths
-2. Keep the assets/ folder structure intact
-3. Internet connection required for CDN libraries (Chart.js, jsPDF, html2canvas)
-4. Use any modern browser (Chrome, Firefox, Safari, Edge)
-```
 ---
 
 ## 📋 What You Can Customize
@@ -183,7 +153,7 @@ skillpath/
 ## 📁 Project Structure
 
 ```
-development-map-template/
+skillpath/
 ├── index.html                 # Main interactive template
 ├── assets/
 │   ├── css/
@@ -196,157 +166,6 @@ development-map-template/
 │   └── devops-example.html    # Pre-configured DevOps example
 └── README.md                  # This documentation
 ```
-
----
-
-## 🎨 Technical Implementation
-
-### 🔧 Core Technologies
-- **HTML5**: Semantic structure with form controls
-- **CSS3**: Responsive grid layout, modern styling, print optimization
-- **Vanilla JavaScript**: Dynamic content management, chart generation, PDF export
-- **Chart.js**: Professional progress visualization
-- **External Libraries**: jsPDF and html2canvas for PDF generation
-
-### 📊 Chart Functionality
-The progress chart automatically:
-- **Adapts to Duration**: Creates month-by-month progression based on your timeline
-- **Shows Growth Curve**: Linear progression from 15% (baseline) to 100% (mastery)
-- **Handles Edge Cases**: Special logic for 1-month plans
-- **Responsive Design**: Scales properly for different screen sizes
-- **Error Handling**: Shows fallback messages if Chart.js fails to load
-
-### 📄 PDF Export System
-- **Primary Method**: High-quality rendering using html2canvas + jsPDF
-- **Automatic Fallback**: Browser print dialog if advanced export fails
-- **Section Management**: Temporarily shows all sections during export
-- **Error Recovery**: Detailed error messages and recovery options
-- **File Naming**: Automatic filename generation based on plan title
-
-### 🎛️ Dynamic Form Management
-- **Real-time Updates**: Changes instantly reflect in the preview
-- **Validation**: Built-in limits (max phases, skills, milestones)
-- **State Management**: Tracks all form states and section visibility
-- **Memory Management**: Proper cleanup when removing items
-
-## 📱 Browser Support & Requirements
-
-### ✅ Supported Browsers
-- **Desktop**: Chrome 60+, Firefox 55+, Safari 12+, Edge 79+
-- **Mobile**: iOS Safari 12+, Chrome Mobile 60+, Samsung Internet 8+
-
-### 📋 Requirements
-- **JavaScript**: Must be enabled for interactivity
-- **Internet Connection**: Required for CDN libraries (Chart.js, jsPDF, html2canvas)
-- **Modern Features**: ES6+ support for PDF export functionality
-
-### ⚡ Performance
-- **Lightweight**: ~50KB total size (excluding CDN libraries)
-- **Fast Loading**: No build process, immediate startup
-- **Efficient Rendering**: Optimized for smooth interactions
-
-## 🔧 Customization & Extension
-
-### 🎨 Styling Customization
-Edit `assets/css/styles.css` to modify:
-- **Colors**: Brand colors, section highlights, chart colors
-- **Typography**: Fonts, sizes, line heights
-- **Layout**: Grid structure, spacing, responsive breakpoints
-- **Print Styles**: PDF-specific formatting
-
-### ⚙️ Functionality Extension
-Edit `assets/js/app.js` to add:
-- **New Form Fields**: Additional input types and validation
-- **Enhanced Charts**: Multiple chart types, custom data visualization
-- **Export Options**: Different PDF formats, additional export formats
-- **Integration**: API connections, data import/export
-
-### 📝 Content Templates
-The template includes smart defaults for:
-- **DevOps Engineering**: Infrastructure, containers, automation
-- **Frontend Development**: React, TypeScript, modern tooling
-- **Backend Development**: APIs, databases, system design
-- **Data Science**: Python, ML, statistics, visualization
-
-## � Example Configurations
-
-### 🔄 DevOps Transition (6 months)
-```
-Duration: 6 months, 6-8 hours/week
-Skills: Terraform (IaC), Kubernetes (Orchestration)
-Phase 1 (M1-2): Foundation - Linux, Git, basic cloud concepts
-Phase 2 (M3-4): Specialization - Terraform deep dive, container fundamentals
-Phase 3 (M5-6): Implementation - Kubernetes deployment, production systems
-```
-
-### 💻 Frontend Bootcamp (4 months)
-```
-Duration: 4 months, 10-12 hours/week
-Skills: React (UI Library), TypeScript (Language), Node.js (Backend)
-Phase 1 (M1): JavaScript fundamentals, HTML/CSS mastery
-Phase 2 (M2-3): React ecosystem, TypeScript integration
-Phase 3 (M4): Full-stack projects, deployment, optimization
-```
-
-### 📊 Data Science Path (8 months)
-```
-Duration: 8 months, 15-20 hours/week
-Skills: Python (Programming), Machine Learning (Algorithms), SQL (Data)
-Phase 1 (M1-2): Python fundamentals, statistics foundation
-Phase 2 (M3-4): Data manipulation, visualization, basic ML
-Phase 3 (M5-6): Advanced ML, model deployment
-Phase 4 (M7-8): Specialization project, portfolio development
-```
-
-## 🚨 Troubleshooting
-
-### ❌ Common Issues
-
-**Chart Not Appearing**
-- Check browser console for Chart.js loading errors
-- Verify internet connection for CDN libraries
-- Try refreshing the page
-- Look for fallback error messages in the chart area
-
-**PDF Export Failing**
-- Use the automatic fallback to browser print (Ctrl+P / Cmd+P)
-- Check console for specific error messages
-- Ensure all sections are visible before export
-- Try exporting with fewer sections enabled
-
-**Form Not Updating**
-- Verify JavaScript is enabled in your browser
-- Check for browser console errors
-- Try refreshing and starting over
-- Clear browser cache if issues persist
-
-### 🛠️ Debug Mode
-Open browser developer tools (F12) and check the console for detailed logging:
-- Chart initialization messages
-- PDF export progress
-- Form validation feedback
-- Error details and stack traces
-
-## 🤝 Contributing & Customization
-
-### 🎯 Design Philosophy
-This template is built to be:
-- **Modular**: Clean separation between HTML structure, CSS styling, and JavaScript functionality
-- **Extensible**: Easy to add new features without breaking existing functionality
-- **Maintainable**: Well-commented code with clear naming conventions
-- **Accessible**: Works for users of all technical skill levels
-
-### 📝 Code Structure
-- **HTML**: Semantic structure with clear element IDs and classes
-- **CSS**: Mobile-first responsive design with print-specific styles
-- **JavaScript**: Functional programming approach with error handling
-
-### 🔄 Version Control
-When customizing:
-1. Make a backup copy of the original files
-2. Test changes in isolation
-3. Document any modifications for future reference
-4. Consider creating custom themes or variants
 
 ---
 
